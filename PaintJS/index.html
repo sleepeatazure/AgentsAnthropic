@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaintJS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css">
+</head>
+<body>
+  <div class="container">
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="controls">
+      <div class="color-picker"></div>
+      <div class="actions">
+        <button id="pencil-btn" class="active">Pencil</button>
+        <button id="eraser-btn">Eraser</button>
+        <input type="range" id="brush-size" min="1" max="20" value="5">
+        <button id="clear-btn">Clear</button>
+        <button id="undo-btn" disabled>Undo</button>
+        <button id="redo-btn" disabled>Redo</button>
+        <a id="save-btn" download="drawing.png">Save</a>
+        <input type="file" id="load-btn" accept="image/*">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
